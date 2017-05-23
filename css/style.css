@@ -1,0 +1,33 @@
+#grid{
+	border-style: solid;
+	width: 960px;
+	height:600px;
+}
+
+.wrapper{
+	margin:auto;
+	padding:10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.cell{
+	border: 1px solid grey;
+	display:inline-flex;
+	height:32px;
+	width:54px;
+
+	padding:0;
+	margin:0;
+}
+.row{
+	display:block;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.highlighted{
+	background-color: black;
+}
