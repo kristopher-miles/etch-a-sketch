@@ -1,4 +1,4 @@
-var defaultSize = 100;
+var defaultSize = 16;
 var gridPixels = 600;
 var maxSize = 100;
 
@@ -14,7 +14,6 @@ function buildGrid(dimentions) {
 		
 	}
 	grid.append(row);
-	//Now we need to set the cell dimentions.
 
 	var cellSize = gridPixels/dimentions;
 	cellSize+="px";
@@ -24,7 +23,6 @@ function buildGrid(dimentions) {
 	$(".cell").on('mouseenter', function(){	
 		$(this).addClass('highlighted');
 	});
-	
 	refreshGrid();
 }
 
@@ -49,9 +47,7 @@ function initalizeGrid () {
 			alert("Invalid grid size. Returning to default.");
 			buildGrid(defaultSize);
 		}
-		
 	});
-
 }
 
 $(document).ready(function () {

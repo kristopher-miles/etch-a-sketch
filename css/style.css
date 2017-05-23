@@ -3,7 +3,7 @@
 }
 
 #grid{
-	border-style: solid;
+	border-style:groove;
 	width: 600px;
 	height: 600px;
 	background-color: lightgray;
@@ -11,11 +11,13 @@
 
 .wrapper{
 	margin:auto;
-	padding:10px;
 	overflow: hidden;
 	text-align: center;
 	margin-top:0;
 	padding-top:0;
+	padding-left: 0;
+	margin-left: 0;
+
 }
 
 .cell{
@@ -52,4 +54,6 @@ button{
 h1{
 	padding-top: 0;
 	margin-top:0;
+	background-color: lightcoral;
+	width:100%;
 }
