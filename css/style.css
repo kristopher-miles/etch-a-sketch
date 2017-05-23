@@ -1,7 +1,12 @@
+*{
+	background-color:darkred;
+}
+
 #grid{
 	border-style: solid;
-	width: 960px;
-	height:600px;
+	width: 600px;
+	height: 600px;
+	background-color: lightgray;
 }
 
 .wrapper{
@@ -9,25 +14,42 @@
 	padding:10px;
 	overflow: hidden;
 	text-align: center;
+	margin-top:0;
+	padding-top:0;
 }
 
 .cell{
-	border: 1px solid grey;
-	display:inline-flex;
-	height:32px;
-	width:54px;
-
-	padding:0;
-	margin:0;
-}
-.row{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align:baseline;
 	display:block;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding-bottom: 0;
-	padding-top: 0;
+	height:10px;
+	width:10px;
+	float:right;
+	background-color: lightgray;
+}
+
+#grid-wrapper{
+	padding:0;
+	text-align: center;
+	width:610px;
+	margin: 0 auto;
+
 }
 
 .highlighted{
 	background-color: black;
+}
+
+button{
+	padding: 1em;
+	margin: 0 1em 1em 0;
+	border-radius: 1em;
+	background-color:lightgray;
+}
+
+h1{
+	padding-top: 0;
+	margin-top:0;
 }
